@@ -5,6 +5,7 @@ branches:
   only:
   - master
 install:
+  - npm install -g typescript 
   - npm install
 script:
   - npm run lint
