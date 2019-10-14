@@ -1,16 +1,17 @@
 language: node_js
 node_js:
-  - 8
+- 8
 branches:
   only:
-    - master
+  - master
 install:
-  - npm install
+- npm install
 script:
-  - npm run lint
-  - npm run test
+- npm run lint
+- npm run test
 deploy:
   provider: firebase
-  token:
-    secure: '...'
   skip_cleanup: true
+env:
+  global:
+    secure: oZEeoJZpMKPj197wiVAfyJSxwqa8frFFWh+zfNhLPV6fsptJedcbbm41h+nOMSuiBLOPIessUVk6QJPqQSigy1NeXIk85uTxFCtzJpQ7uaCNYa5lyo4a1Fg1UVDvjZvC2BoK7GEiGxCCq15Jr8QlT675egsUjEe+Fdw7BIZlHNcVuv2yfXqn/2OAnig6GdmeA49EMQiZahzb57jyj1O9U6VZoWttzDCu3xLQrfTkaQ+FccH4apjTdspXJPIa4A0WyNhhQP7IBTFzFq01jNd7WozNQhDj02gYCTRomjhllxhi61NhsAi1prGTOgYtaqe/TxQx2orNcKyDby3RCrlL0mFKLlemqLmDVYlxS9LLdSBFKIjC1QAWM+ng8QE27N++pDjN2QxE+WxxaOsfZ6lGVNMW53m+d3IezoWeFz5ET953YDJ7nvnu8InZ9udtDpbjDbo4CEbnknMJcO/tKFyovMdn9g1XM41ddTXn4jJyQNe2ed3E3S+N0RHtOsB05hLfNqtIu3Rlr3uRqbWml99lrxzgpQ5wR6lGfP7/nAXzwwOjaoxYiuOFYlcOhP4K9Qkj79LpT2Wnq0me7D4j1/UU2WHeZr05nezmgjPn+9/2U160Rsl3caGKhfPLpAHu2tu8uO6RBwtGSlVhpl1x5B1ueKGuLUJW0gX5ShnLJg3WaFs=
