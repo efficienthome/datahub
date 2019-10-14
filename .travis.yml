@@ -9,6 +9,9 @@ install:
 script:
   - npm run lint
   - npm run test
+  - cd .\functions\
+  - npm run build
+  - cd ..\
 deploy:
   provider: firebase
   skip_cleanup: true
