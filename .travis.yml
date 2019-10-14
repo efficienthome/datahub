@@ -5,13 +5,14 @@ branches:
   only:
   - master
 install:
-  - npm install -g typescript 
-  - npm install
+  - npm install -g typescript
 script:
+  - cd functions
+  - npm install
   - npm run lint
   - npm run test
-  - cd functions
   - npm run build
+  - cd ../
 deploy:
   provider: firebase
   skip_cleanup: true
