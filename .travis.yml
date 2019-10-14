@@ -6,9 +6,6 @@ branches:
   - master
 install:
 - npm install
-script:
-- npm run lint
-- npm run test
 deploy:
   provider: firebase
   skip_cleanup: true
